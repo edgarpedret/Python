@@ -72,15 +72,22 @@
     <div class="paper">
         <form method="POST" action="/form">
             <div class="container-yelmo">
-                <img src="static/yelmo.png" alt="Imagen Yelmo Derecha" class="yelmo-img" style="width: 60px; height: auto;">
+                <img src="templates/static/yelmo.png" alt="Imagen Yelmo Derecha" class="yelmo-img" style="width: 60px; height: auto;">
                 <h1>HeroQuest</h1>
-                <img src="static/yelmo2.png" alt="Imagen Yelmo Izquierda" class="yelmo2-img" style="width: 60px; height: auto;">
+                <img src="templates/static/yelmo2.png" alt="Imagen Yelmo Izquierda" class="yelmo2-img" style="width: 60px; height: auto;">
             </div>
             <div class="section">
-                Tipo de Monstruo o PNJ: <input type="text" name="tipus" required><br>
                 Nombre: <input type="text" name="nom" required><br>
             </div>
             <div class="flex-container">
+                <div class="flex-item section">
+                    <label for="monstre">Tipo de Monstruo</label><br>
+                    <select name="monstre" required>
+                        <option value="Orco">Orco</option>
+                        <option value="Ramon">Ramon</option>
+                        <option value="monstruo">Monstruo</option>
+                    </select><br>
+                </div>
                 <div class="flex-item section">
                     <label for="atac">Ataque</label><br>
                     <select name="atac" required>
