@@ -15,11 +15,12 @@ def formulari():
         cos = request.form['cos']
         ment = request.form['ment']
         habilitats = request.form['habilitats']
+        monstre = request.form['monstre']
 
         #  Aqui retorna la pagina html amb el resultat
         return render_template("retorno_hero.html", tipus=tipus, nom=nom, atac=atac,
                                defensa=defensa, moviment=moviment, cos=cos,
-                               ment=ment, habilitats=habilitats)
+                               ment=ment, habilitats=habilitats, monstre=monstre)
 
     else:# Aqui et dona la pagina html amb el formulari
         environment = Environment(loader=FileSystemLoader("templates/"))
